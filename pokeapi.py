@@ -16,7 +16,7 @@ def get_pokemon_data(pokemon_name: str):
 
     If curious, see https://pokeapi.co/docs/v2#pokemon
     """
-    url = f"http://pokeapi.co/api/v2/pokemon/{pokemon_name}/"
+    url = f"http://pokeapi.co/api/v2/pokemon/{pokemon_name.lower()}/"
     response = requests.get(url)
 
     # If the request to the pokemon data is successful (HTTP code 200),
